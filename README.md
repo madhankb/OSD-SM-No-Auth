@@ -1,7 +1,7 @@
 # Guide to setup self-managed dashboards in EC2 hosted container
 
 ## Prerequisite
-A managed service OpenSearch domain without any authentication method enabled with the below domain access policy
+An AWS managed OpenSearch domain without any authentication method enabled with the below domain access policy
 ```json
 {
   "Version": "2012-10-17",
