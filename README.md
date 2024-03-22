@@ -28,7 +28,7 @@ server.host: "0.0.0.0"
 opensearch.hosts: http://localhost:9200
 ```
 2. Create a new Dockerfile like below
-```yml
+```
 FROM opensearchproject/opensearch-dashboards:x.x.0
 RUN /usr/share/opensearch-dashboards/bin/opensearch-dashboards-plugin remove securityDashboards
 COPY --chown=opensearch-dashboards:opensearch-dashboards opensearch_dashboards.yml /usr/share/opensearch-dashboards/config/
