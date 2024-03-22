@@ -18,7 +18,7 @@ An AWS managed OpenSearch domain without any authentication method enabled and i
 }
 ```
 > [!WARNING]
-> To establish a connection with the managed OpenSearch domain, it's necessary to uninstall the security plugin from OpenSearch Dashboards. Otherwise, the Dashboards' security plugin will anticipate a secured domain and  eventually fails to make a connection.
+> To establish a connection with the managed OpenSearch domain, it's necessary to uninstall the security plugin from OpenSearch Dashboards. Otherwise, the Dashboards' security plugin will anticipate a secured domain and fails to make a connection with the domain
 
 ## Steps to remove the security plugin and spinup a self managed dashboards
 1. Remove all Security plugin configuration settings from opensearch_dashboards.yml or place the below example file in the same folder as the Dockerfile
