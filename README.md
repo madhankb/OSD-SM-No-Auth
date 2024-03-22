@@ -2,7 +2,7 @@
 
 ## Prerequisite
 A managed service OpenSearch domain without any authentication method enabled with the below domain access policy
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
