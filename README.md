@@ -22,13 +22,13 @@ An AWS managed OpenSearch domain without any authentication method enabled and i
 
 ## Steps to remove the security plugin and spinup a self managed dashboards
 1. Remove all Security plugin configuration settings from opensearch_dashboards.yml or place the below example file in the same folder as the Dockerfile
-```json
+```yml
 server.name: opensearch-dashboards
 server.host: "0.0.0.0"
 opensearch.hosts: http://localhost:9200
 ```
 2. Create a new Dockerfile like below
-```json
+```yml
 FROM opensearchproject/opensearch-dashboards:x.x.0
 RUN /usr/share/opensearch-dashboards/bin/opensearch-dashboards-plugin remove securityDashboards
 COPY --chown=opensearch-dashboards:opensearch-dashboards opensearch_dashboards.yml /usr/share/opensearch-dashboards/config/
