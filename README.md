@@ -38,4 +38,5 @@ COPY --chown=opensearch-dashboards:opensearch-dashboards opensearch_dashboards.y
 5. In the attached sample `docker-compose.yml`, change the dashboards' image name from `opensearchproject/opensearch-dashboards:2.5.0` to `opensearch-dashboards-no-security`.
 6. The new `docker-compose-no-security.yml` file is now created. Now run the `docker-compose up` command to run the containers with new image. Now customer can access the self-managed OpenSearch Dashboards by hitting the EC2 endpoint with port `5601`. By doing so, you can conveniently view and interact with all the saved objects
 
-Reference Link -> https://opensearch.org/docs/latest/security/configuration/disable/
+## Reference Link
+https://opensearch.org/docs/latest/security/configuration/disable/
